@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {"name": "Lily"},
+    {"name": "Anthony"},
+    {"name": "Ruby"},
+    {"name": "A Shook"},
+    {"name": "Amelia"},
+    {"name": "Margaret"},
+    {"name": "Nicky"},
+    {"name": "Hirsch"},
+    {"name": "Amanda"},
+    {"name": "Calvin"},
+    {"name": "Meena"},
+    {"name": "Yuree"},
+    {"name": "Alex Wei"},
+    {"name": "Darius"},
+    {"name": "Arianna"},
+    {"name": "Teffanie"},
+    {"name": "Grace"},
+    {"name": "Rowan"},
+    {"name": "Haeyeon"},
+    {"name": "Emily"},
+    {"name": "Davis"},
+    {"name": "Janice"},
+    {"name": "Jessie"},
+    {"name": "GG"}
+  ],
+  "links": [
+    {"source": "Lily", "target": "Anthony", "value": 1},
+    {"source": "Lily", "target": "Ruby", "value": 1},
+    {"source": "Ruby", "target": "Anthony", "value": 1}
+  ]
+}

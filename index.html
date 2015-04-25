@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      svg {
+        background-color: #000;
+      }
+      .link {
+        stroke: #FFF;
+        stroke-opacity: 0.6;
+      }
+      g {
+        cursor: pointer
+      }
+      text {
+        font-family: sans-serif;
+        fill: #FFF;
+      }
+    </style>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.11/seedrandom.min.js>
+    </script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="force.js"></script>
+    <div class="row">
+      <div class="col-xs-3">
+        <textarea id="out" class="form-control"></textarea>
+      </div>
+      <div class="col-xs-9" id="graph">
+      </div>
+    </div>
+  </body>
+</html>
