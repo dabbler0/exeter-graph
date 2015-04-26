@@ -15,20 +15,50 @@
         font-family: sans-serif;
         fill: #FFF;
       }
+      body {
+        overflow: hidden;
+      }
+      #out {
+        width: 300px;
+        height: 300px;
+        color: #FFF;
+        font-family: monospace;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        overflow-x: scroll;
+      }
     </style>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
   </head>
   <body>
+    <textarea id="out">
+Anthony: Lily, Ruby, Grace, Frank, Alex Wei, Alex Song, Andy, Meena, Darius, Calvin, Haeyeon, Blandine, Lizzie, Mandy, Chad, Aivant, Eric, Jeffery
+Chad: Alec, Yannick, Andy, Meena, Darius,  Alex Wei, Alex Song, Andy, Hambacher, James, Jeffery
+Frank: Mandy, Alex Wei, Alex Song, Andy, Meena, Calvin
+Ruby: Hersh, Lily, Anthony, Jeffery, Yuree, Sabrina
+Lily: Ruby, Anthony, Grace, Rowan, Haeyeon, Steere, Cat, Hersh, Alex Shook, Haeyeon, Teffanie, Darius, Sabrina
+Grace: Lily, Ruby, Lizzie, Brianna, Andrew Xu, Frank
+Blandine: Michael, Jason, Reggie, Haeyeon, Vazan, Teffanie
+Darius: Alex Wei, Alex Song, Meena, Andy, Vazan
+Vazan: Grace, Darius, Andrew Xu, Jo, Matt Kim
+Arianna: Angela, Yuree, Meena, Jonathan, Liolios
+Jonathan: Liolios
+Meena: Andy, Arianna, Yuree, Alex Song, Alex Wei, Jeffery, ksun
+Alec: James, Hambacher, Yannick, Eliza, Nicky Sun
+Eliza: James, Hambacher, Yannick, Alec
+James: Hambacher, Alec, Yannick, Eliza
+Lizzie: Eric, Aivant, Anthony, Grace, Ruby
+Jo: Mandy, Frank, Grace, Andrew Xu, Brianna
+Haeyeon: Blandine, Lily, Anthony, Jason
+Andy: Meena, Calvin, Alex Song, Darius, Jeffery, Chad
+ksun: Alex Wei, Meena, Jeffery, Alec, Nicky Sun, James, Yannick, Chad</textarea>
+    <div id="graph">
+    </div>
+    </div>
     <script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.11/seedrandom.min.js>
     </script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="force.js"></script>
-    <div class="row">
-      <div class="col-xs-3">
-        <textarea id="out" class="form-control"></textarea>
-      </div>
-      <div class="col-xs-9" id="graph">
-      </div>
-    </div>
   </body>
 </html>
